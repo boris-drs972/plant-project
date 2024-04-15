@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Maison des Plantes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>La Maison des Plantes</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#gallery">Galerie</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>À propos de nous</h2>
+        <p>Nous sommes passionnés par les plantes et nous aidons nos clients à trouver leurs plantes idéales pour leurs maisons ou bureaux.
+            Nous aidons aussi tous nos clients et visiteurs a mieux comprendre ce que signifie les plantes et ce qu'elles peuvent apporter.
+        </p>
+    </section>
+
+    <section id="gallery">
+        <h2>Galerie de nos plantes</h2>
+        <div class="gallery">
+            <!-- Exemples d'images de plantes avec des liens vers Unsplash -->
+            <img src="https://source.unsplash.com/1600x900/?houseplants,1" alt="Plante 1">
+            <img src="https://source.unsplash.com/1600x900/?houseplants,2" alt="Plante 2">
+            <img src="https://source.unsplash.com/1600x900/?houseplants,3" alt="Plante 3">
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Notre Blog</h2>
+        <article>
+            <h3>Comment prendre soin de vos plantes d'intérieur</h3>
+            <p>Date: 12 avril 2024</p>
+            <p>Cet article vous donnera des conseils utiles pour garder vos plantes d'intérieur en bonne santé et florissantes...</p>
+            <a href="#">Lire la suite</a>
+        </article>
+        <article>
+            <h3>Les meilleures plantes pour un air pur</h3>
+            <p>Date: 8 avril 2024</p>
+            <p>Explorez notre liste des meilleures plantes pour purifier l'air de votre maison ou bureau...</p>
+            <a href="#">Lire la suite</a>
+        </article>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <form action="submit_form.php" method="POST">
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 La Maison des Plantes. Tous droits réservés.</p>
+    </footer>
+
+    <button id="backToTop" onclick="topFunction()" title="Retour en haut">↑ </button>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

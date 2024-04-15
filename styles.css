@@ -1,0 +1,118 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #fff8d8;
+    background-color: #f4f4f4;
+    background-image: url('assets/fullplantback.jpg'); /* Remplacez 'chemin_vers_votre_image.jpg' par le chemin de votre image */
+    background-position: center center; /* Centrage de l'image de fond */
+    background-size: cover; /* S'assure que l'image couvre toute la zone disponible sans répétition */
+    background-repeat: no-repeat; /* Empêche l'image de se répéter */
+    background-attachment: fixed; /* Fixe l'image de fond lors du défilement */
+}
+
+header {
+    background-color: #2D7F29;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    text-align: center;
+    min-height: 100vh; /* Assure que chaque section a au moins la hauteur du viewport */
+    width: 100%; /* S'assure que les sections utilisent toute la largeur disponible */
+    padding: 20px; /* Ajoute un peu d'espace à l'intérieur des sections */
+    box-sizing: border-box; /* Inclut le padding dans le calcul de la largeur/hauteur */
+}
+
+
+
+
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #2D7F29;
+    color: white;
+}
+
+.gallery img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 10px;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+article {
+    background-color: rgb(222, 255, 244);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+article h3 {
+    color: #2D7F29;
+}
+
+article p {
+    line-height: 1.5;
+}
+
+article a {
+    color: #006400;
+    text-decoration: none;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    padding: 10px 16px;
+    font-size: 16px;
+    color: white;
+    background-color: #2f3531; /* Utilisez le vert doux de votre palette de couleurs */
+    border: none;
+    cursor: pointer;
+    border-radius: 60px;
+    z-index: 1000;
+}
+
+#backToTop:hover {
+    background-color: #98c1a6; /* Un ton légèrement plus foncé pour le survol */
+}
