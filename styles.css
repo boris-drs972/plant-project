@@ -116,3 +116,7 @@ article a {
 #backToTop:hover {
     background-color: #98c1a6; /* Un ton légèrement plus foncé pour le survol */
 }
+
+#start {
+    font-weight:900;
+}
